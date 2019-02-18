@@ -1,0 +1,9 @@
+git init  将此处作为git仓库
+
+git add .  将此处的所有文件都上传，如果将‘.’换成某一个文件名字，则只上传某一个文件
+
+git commit -m "注释" 将项目提交到仓库
+
+git pull --rebase origin master  将readme文件合并
+
+git push origin master  将本地仓库项目推送到远程仓库上
