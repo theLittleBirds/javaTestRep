@@ -35,6 +35,16 @@
 	 
 	 6、若新建远程远程仓库的时候自动创建了README文件，则commit的时候会报错，解决办法看上面：git pull --rebase origin master
 	 
+github向远程仓库提交文件：
+
+	1.先更新：git pull origin master
+	
+	2.添加修改的文件：git add fileName
+	
+	3.添加到本地仓库：git commit -m "提交注释"
+	
+	4.向远程仓库添加：git push origin master
+	 
 	 
 	 
 	 
