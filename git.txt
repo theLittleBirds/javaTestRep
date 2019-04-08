@@ -1,9 +1,43 @@
-git init  将此处作为git仓库
+1.git init  将此处作为git仓库
 
-git add .  将此处的所有文件都上传，如果将‘.’换成某一个文件名字，则只上传某一个文件
+2.git add .  将此处的所有文件都上传，如果将‘.’换成某一个文件名字，则只上传某一个文件
 
-git commit -m "注释" 将项目提交到仓库
+3.git commit -m "注释" 将项目提交到仓库
 
-git pull --rebase origin master  将readme文件合并
+4.git pull --rebase origin master  将readme文件合并
 
-git push origin master  将本地仓库项目推送到远程仓库上
+5.git push origin master  将本地仓库项目推送到远程仓库上
+
+6.git log  查看git的详细历史记录
+  git reflog 查看历史记录的每一次命令
+
+7.git log --pretty=oneline 查看git的简单历史记录
+
+8.git reset --hard HEAD^ 回退到上一个版本
+  git reset --hard HEAD^^ 回退到上上一个版本
+  git reset --hard HEAD~100 回退到上100个版本
+  git reset --hard 版本号 回退到"版本号"这个版本 版本号可以不用写全
+
+9.git diff 比较的是工作区文件与缓冲区文件的区别（修改后但未git add）
+  git diff --cached 和--staged比较的是工作区文件与暂存区（stage）文件的区别
+  
+本地项目上传到github上步骤
+	 1、在本地创建一个版本库（即文件夹），通过git init把它变成Git仓库；
+
+     2、把项目复制到这个文件夹里面，再通过git add .把项目添加到仓库；
+
+     3、再通过git commit -m "注释内容"把项目提交到仓库；
+
+     4、在Github上设置好SSH密钥后，新建一个远程仓库，通过git remote add origin https://github.com/guyibang/TEST2.git将本地仓库和远程仓库进行关联；
+
+     5、最后通过git push -u origin master(远程仓库为空的时候用此命令) 把本地仓库的项目推送到远程仓库上
+		远程仓库不为空的时候用git push origin master
+	 
+	 6、若新建远程远程仓库的时候自动创建了README文件，则commit的时候会报错，解决办法看上面：git pull --rebase origin master
+	 
+	 
+	 
+	 
+	 
+	 
+	 
