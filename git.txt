@@ -21,7 +21,7 @@
 9.git diff 比较的是工作区文件与缓冲区文件的区别（修改后但未git add）
   git diff --cached 和--staged比较的是工作区文件与暂存区（stage）文件的区别
   
-本地项目上传到github上步骤
+本地项目上传到github上步骤：
 	 1、在本地创建一个版本库（即文件夹），通过git init把它变成Git仓库；
 
      2、把项目复制到这个文件夹里面，再通过git add .把项目添加到仓库；
